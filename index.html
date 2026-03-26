@@ -4,11 +4,18 @@
   <meta charset="UTF-8"/>
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <link rel="manifest" href="manifest.json"/>
+  <meta name="theme-color" content="#5c6bc0"/>
   <title>Journal physique</title>
   <style>
-    body { margin:0; background:#f5f4f1; }
+    * { margin:0; padding:0; box-sizing:border-box; }
+    body { background:#f5f4f1; }
     iframe { width:100vw; height:100vh; border:none; display:block; }
   </style>
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
 </head>
 <body>
   <iframe src="https://script.google.com/macros/s/AKfycby_5kI0LxzmATlPI0hQUdO3_nHtGd1L2StHwvrpHPecUgxrAsV1_TAo6ngc1mZeK65M/exec" allowfullscreen></iframe>
